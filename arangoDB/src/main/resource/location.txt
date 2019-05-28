@@ -1,34 +1,53 @@
-02 Hollow Ridge Point
-2 Dawn Way
-4569 Grayhawk Park
-75079 Valley Edge Point
-1791 Schlimgen Center
-27772 Mcbride Center
-295 Westerfield Plaza
-059 Garrison Pass
-47 Dexter Court
-24 Anthes Terrace
-9 Rockefeller Plaza
-02 Gerald Way
-9 Kipling Drive
-9386 Northland Pass
-51 Mendota Parkway
-67 Karstens Circle
-0835 Old Shore Place
-98 Merry Street
-33 Florence Crossing
-33115 Wayridge Hill
-86490 Lakewood Gardens Place
-852 Sullivan Parkway
-54836 Chinook Terrace
-56367 Union Way
-254 Buell Trail
-55 Scofield Plaza
-53 Mccormick Crossing
-6 Golf View Trail
-5000 Butternut Drive
-6 Gulseth Alley
-93 Melby Center
+13 Hàng Bột
+7 Tràng Thi
+9 Bà Huyện Thanh Quan
+35 Đại Cồ Việt
+40 Phố Đông Tác
+58 Quốc Tử Giám
+40 Trần Phú
+57 Trần Hưng Đạo
+44 Trần Hữu Tước
+81 Đại Cồ Việt
+288 Lê Duẩn
+53 Nguyễn Du
+81 Trần Hưng Đạo
+48 Lý Thường Kiệt
+32 Hàng Da
+40 Trần Phú
+1A Đinh Liệt
+136 Lê Thanh Nghị
+78 Giải Phóng
+28A Điện Biên Phủ
+18 Phan Bội Châu
+31 Tràng Thi
+34 Tuệ Tĩnh
+58 Quán Sứ
+18 Ngô Văn Sở
+51 Trần Quang Diệu
+19 Tôn Thất Tùng
+8 Võ Văn Kiệt
+188 Trần Não
+191 Hoàng Hoa Thám
+36 Phan Đăng Lưu
+4 Lê Duẩn
+104 Nguyễn Văn Trỗi
+2 Ngô Đức Kế
+196 Nguyễn Thị Minh Khai
+211 Tô Hiền Thành
+46 Trương Định
+180 Nam Kỳ Khởi Nghĩa
+81 Xô Viết Nghệ Tĩnh
+235 Đồng Khởi
+337 Nguyễn Trãi
+128 Phó Cơ Điều
+982 Trần Hưng Đạo
+314 Phạm Hùng
+284 An Dương Vương
+8 Võ Văn Kiệt
+347 Trần Phú
+46 Trương Định
+36 Châu Văn Liêm
+211 Tô Hiến Thành
 4 Towne Way
 6 Talmadge Pass
 9 American Park
@@ -54,23 +73,6 @@
 16770 Myrtle Parkway
 85545 Autumn Leaf Lane
 5081 Village Street
-92894 Kipling Parkway
-16 Pawling Circle
-75 Tennessee Point
-909 Tennyson Crossing
-08 Bartillon Court
-263 Towne Hill
-14911 Granby Park
-111 Northfield Street
-90 Cody Pass
-76 Delladonna Lane
-6734 Mayer Street
-65 Lotheville Lane
-2787 Ridgeview Place
-6 Randy Park
-123 Green Junction
-66 Oakridge Court
-8128 Sunfield Alley
 41 Red Cloud Point
 35249 Goodland Junction
 5842 Bultman Parkway
@@ -95,6 +97,4 @@
 74 Arrowood Place
 6 Eagan Alley
 18 Northview Street
-209 Dryden Crossing
-6 Meadow Vale Junction
 9885 Kingsford Avenue
