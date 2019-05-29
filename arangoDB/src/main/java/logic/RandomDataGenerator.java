@@ -160,7 +160,7 @@ public class RandomDataGenerator {
 		int year = generateRandomBetween(startYear, endYear);
 		return month + "/" + year;
 	}
-        //Ramdom tao Person
+        //Ramdom tao Person( co ID, Label, Describe, Age- new, Gender- new)
 	private void generatePerson(int id) {
 		try {
 			Person person = new Person();
@@ -306,7 +306,7 @@ public class RandomDataGenerator {
 			for (int i = 0; i < quantity; i++) {
 				int randomCase = random.nextInt(32);
 				switch (randomCase) {
-				case 0:
+				case 0:// person- gap go- person
 					String query = "MATCH (m:Person{id:{1}}), (n:Person{id:{2}}) CREATE (m)-[:GapGo]->(n)";
 					PreparedStatement preparedStatement = this.connection.prepareStatement(query);
 					int firstRan = 0;
@@ -328,7 +328,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 1:
+				case 1:// Orgnization- to chuc- Event
 					query = "MATCH (m:Organization{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:ToChuc]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(organizationsNumber);
@@ -346,7 +346,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 2:
+				case 2:// person- to chuc- event
 					query = "MATCH (m:Person{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:ToChuc]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -364,7 +364,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 3:
+				case 3:// city- ky thoa thuan- city
 					query = "MATCH (m:Country{id:{1}}), (n:Country{id:{2}}) CREATE (m)-[:KyThoaThuan]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = 0;
@@ -386,7 +386,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 4:
+				case 4://person- tham gia- orgnization
 					query = "MATCH (m:Person{id:{1}}), (n:Organization{id:{2}}) CREATE (m)-[:ThamGia]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -404,7 +404,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 5:
+				case 5:// person- tham gia- event
 					query = "MATCH (m:Person{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:ThamGia]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -422,7 +422,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 6:
+				case 6://person- tham gia- agreement
 					query = "MATCH (m:Person{id:{1}}), (n:Agreement{id:{2}}) CREATE (m)-[:ThamGia]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -440,7 +440,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 7:
+				case 7://orgnization- tham gia- orgnization
 					query = "MATCH (m:Organization{id:{1}}), (n:Organization{id:{2}}) CREATE (m)-[:ThamGia]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = 0;
@@ -462,7 +462,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 8:
+				case 8://orgnization- tham gia- event
 					query = "MATCH (m:Organization{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:ThamGia]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(organizationsNumber);
@@ -480,7 +480,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 9:
+				case 9:// orgnization- tham gia- agreement
 					query = "MATCH (m:Organization{id:{1}}), (n:Agreement{id:{2}}) CREATE (m)-[:ThamGia]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(organizationsNumber);
@@ -498,7 +498,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 10:
+				case 10:// event- dien ra tai- location
 					query = "MATCH (m:Event{id:{1}}), (n:Location{id:{2}}) CREATE (m)-[:DienRaTai]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(eventsNumber);
@@ -516,7 +516,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 11:
+				case 11:// event- dien ra tai- city
 					query = "MATCH (m:Event{id:{1}}), (n:Country{id:{2}}) CREATE (m)-[:DienRaTai]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(eventsNumber);
@@ -534,7 +534,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 12:
+				case 12:// person- ung ho- city
 					query = "MATCH (m:Person{id:{1}}), (n:Country{id:{2}}) CREATE (m)-[:UngHo]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -552,7 +552,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 13:
+				case 13:// person- ung ho- agreement
 					query = "MATCH (m:Person{id:{1}}), (n:Agreement{id:{2}}) CREATE (m)-[:UngHo]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -570,7 +570,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 14:
+				case 14:// person- ung ho- event
 					query = "MATCH (m:Person{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:UngHo]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -588,7 +588,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 15:
+				case 15:// city- ung ho- city
 					query = "MATCH (m:Country{id:{1}}), (n:Country{id:{2}}) CREATE (m)-[:UngHo]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = 0;
@@ -610,7 +610,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 16:
+				case 16://city- ung ho- agreement
 					query = "MATCH (m:Country{id:{1}}), (n:Agreement{id:{2}}) CREATE (m)-[:UngHo]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(countriesNumber);
@@ -628,7 +628,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 17:
+				case 17://city- ung ho- event
 					query = "MATCH (m:Country{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:UngHo]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(countriesNumber);
@@ -646,7 +646,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 18:
+				case 18:// person- phan doi- city
 					query = "MATCH (m:Person{id:{1}}), (n:Country{id:{2}}) CREATE (m)-[:PhanDoi]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -664,7 +664,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 19:
+				case 19:// person- phan doi- agreement
 					query = "MATCH (m:Person{id:{1}}), (n:Agreement{id:{2}}) CREATE (m)-[:PhanDoi]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -682,7 +682,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 20:
+				case 20:// person- phan doi- event
 					query = "MATCH (m:Person{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:PhanDoi]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -700,7 +700,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 21:
+				case 21:// city- phan doi- city
 					query = "MATCH (m:Country{id:{1}}), (n:Country{id:{2}}) CREATE (m)-[:PhanDoi]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = 0;
@@ -722,7 +722,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 22:
+				case 22:// city- phan doi- agreement
 					query = "MATCH (m:Country{id:{1}}), (n:Agreement{id:{2}}) CREATE (m)-[:PhanDoi]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(countriesNumber);
@@ -740,7 +740,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 23:
+				case 23:// city- phan doi- event
 					query = "MATCH (m:Country{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:PhanDoi]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(countriesNumber);
@@ -758,7 +758,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 24:
+				case 24:// person- phat bieu tai- event
 					query = "MATCH (m:Person{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:PhatBieuTai]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -776,7 +776,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 25:
+				case 25://city- cang thang voi- city
 					query = "MATCH (m:Country{id:{1}}), (n:Country{id:{2}}) CREATE (m)-[:CangThangVoi]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = 0;
@@ -798,7 +798,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 26:
+				case 26:// person- huy bo- agreement
 					query = "MATCH (m:Person{id:{1}}), (n:Agreement{id:{2}}) CREATE (m)-[:HuyBo]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -816,7 +816,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 27:
+				case 27://person- huy bo- event
 					query = "MATCH (m:Person{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:HuyBo]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(personsNumber);
@@ -834,7 +834,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 28:
+				case 28://country- huy bo- agreement
 					query = "MATCH (m:Country{id:{1}}), (n:Agreement{id:{2}}) CREATE (m)-[:HuyBo]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(countriesNumber);
@@ -852,7 +852,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 29:
+				case 29:// coutry- huy bo- event
 					query = "MATCH (m:Country{id:{1}}), (n:Event{id:{2}}) CREATE (m)-[:HuyBo]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(countriesNumber);
@@ -870,7 +870,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 30:
+				case 30:// country- dam phan voi- country
 					query = "MATCH (m:Country{id:{1}}), (n:Country{id:{2}}) CREATE (m)-[:DamPhanVoi]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = 0;
@@ -892,7 +892,7 @@ public class RandomDataGenerator {
 					preparedStatement.setString(4, urls.get(random.nextInt(urls.size())));
 					preparedStatement.executeUpdate();
 					break;
-				case 31:
+				case 31:// moi them
 					query = "MATCH (m:Event{id:{1}}), (n:Time{id:{2}}) CREATE (m)-[:DienRaLuc]->(n)";
 					preparedStatement = connection.prepareStatement(query);
 					firstRan = random.nextInt(eventsNumber);
