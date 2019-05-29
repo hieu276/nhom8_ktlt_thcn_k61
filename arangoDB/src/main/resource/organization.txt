@@ -1,100 +1,100 @@
-Preferred Bank
-WPP plc
-NCI Building Systems, Inc.
-Glacier Bancorp, Inc.
-CardConnect Corp.
-CSI Compressco LP
-Wingstop Inc.
-Interstate Power and Light Company
-Amerco
-Bank of Nova Scotia (The)
-Ionis Pharmaceuticals, Inc.
-Digital Realty Trust, Inc.
-Aegon NV
-Liberty Media Corporation
-Entergy Louisiana, Inc.
-Navios Maritime Partners LP
-Nu Skin Enterprises, Inc.
-Axsome Therapeutics, Inc.
-First Trust Nasdaq Bank ETF
-Hersha Hospitality Trust
-Conatus Pharmaceuticals Inc.
-Gilead Sciences, Inc.
-Hersha Hospitality Trust
-Viad Corp
-Hollysys Automation Technologies, Ltd.
-Triple-S Management Corporation
-Colony Starwood Homes
-Plumas Bancorp
-Innospec Inc.
-Magal Security Systems Ltd.
-Blackrock Global
-MuleSoft, Inc.
-Motorcar Parts of America, Inc.
-Nuveen Insured New York Select Tax-Free Income Portfolio
-Reliance Steel & Aluminum Co.
-voxeljet AG
-CHS Inc
-Nivalis Therapeutics, Inc.
-United Parcel Service, Inc.
-Neogen Corporation
-Container Store (The)
-Anadarko Petroleum Corporation
-Cencosud S.A.
-Harley-Davidson, Inc.
-Applied Optoelectronics, Inc.
-Trillium Therapeutics Inc.
-DXP Enterprises, Inc.
-PriceSmart, Inc.
-IHS Markit Ltd.
-Government Properties Income Trust
-Cypress Semiconductor Corporation
-MFS Government Markets Income Trust
-PGT Innovations, Inc.
-Chesapeake Lodging Trust
-Kadmon Holdings, Inc.
-Templeton Emerging Markets Income Fund, Inc.
-American Airlines Group, Inc.
-Morgan Stanley Emerging Markets Fund, Inc.
-Premier, Inc.
-GSV Capital Corp
-AMAG Pharmaceuticals, Inc.
-Alliance World Dollar Government Fund II
-Medical Transcription Billing, Corp.
-Rockwell Collins, Inc.
-Independent Bank Corporation
-Nuveen Quality Preferred Income Fund 2
-Altimmune, Inc.
-American Financial Group, Inc.
-Upland Software, Inc.
-Viking Therapeutics, Inc.
-Invesco Quality Municipal Income Trust
-Sinovac Biotech, Ltd.
-PS Business Parks, Inc.
-Western Asset Emerging Markets Debt Fund Inc
-VOC Energy Trust
-J P Morgan Chase & Co
-Monster Digital, Inc.
-West Pharmaceutical Services, Inc.
-First Trust Latin America AlphaDEX Fund
-Janus Henderson SG Global Quality Income ETF
-bebe stores, inc.
-Diebold Nixdorf Incorporated
-Atlantic Alliance Partnership Corp.
-ING Group, N.V.
-Atara Biotherapeutics, Inc.
-Scudder Global High Income Fund, Inc.
-BlackRock Multi-Sector Income Trust
-Deutsche Bank AG
-DENTSPLY SIRONA Inc.
-Stifel Financial Corporation
-Hecla Mining Company
-Civitas Solutions, Inc.
-Jack In The Box Inc.
-Crawford & Company
-Fortress Transportation and Infrastructure Investors LLC
-The Charles Schwab Corporation
-AG Mortgage Investment Trust, Inc.
-Enbridge Energy, L.P.
-Tableau Software, Inc.
-Western Asset High Yield Defined Opportunity Fund Inc.
+Vinamilk
+Vietcombank
+Nestlé Việt nam
+Samsung Vina Electronics
+Tập đoàn Công Nghiệp - Viễn Thông Quân Đội Viettel
+Coca-Cola Việt Nam
+Suntory PepsiCo Việt Nam
+PepsiCo Foods Việt Nam
+Techcombank
+Mercedes-Benz Việt Nam
+Abbott Laboratories S.A
+Honda Việt Nam
+BIDV
+Adidas
+Mobifone
+ASUS Việt Nam
+TH Milk
+Bosch Việt Nam
+Schneider Electric
+Tiki
+IBM Việt Nam
+Manulife Việt Nam
+Tập đoàn Vingroup
+Prudential Việt Nam
+Acecook Việt Nam
+Tổng công ty Hàng không Việt Nam
+PNJ
+FrieslandCampina Việt Nam
+Thế Giới Di Động
+Nike Việt Nam
+Nutifood
+Masan Group
+KPMG Việt Nam
+L'Oréal Việt Nam
+FPT Software
+Deloitte Việt Nam
+NashTech Việt Nam
+HSBC
+DAIKIN Việt Nam
+Công Ty TNHH Canon Marketing Việt Nam
+Standard Chartered Việt Nam
+Dai-ichi Life Việt Nam
+Citibank Việt Nam
+Cargill Việt Nam
+Mondelez Vietnam
+FWD Việt Nam
+VinaCapital
+Sanofi Việt Nam
+COTECCONS
+Shopee
+AIA Việt Nam
+LOTTE Mart Việt Nam
+PricewaterhouseCoopers
+Bayer Việt Nam
+Vinasoy
+Chubb Life Việt Nam
+LG - VINA Cosmetics
+VNG
+British American Tobacco Việt Nam
+Kimberly-Clark Việt Nam
+ABB LTD
+Vietjet Air
+Ernst & Young Việt Nam
+THACO GROUP
+WIPRO UNZA VIETNAM
+CapitaLand Việt Nam
+Perfetti Van Melle Viet Nam
+DKSH Vietnam
+Schindler Việt Nam
+Công Ty Cổ Phần Tập đoàn Xây dựng Hòa Bình
+DHL - VNPT Express
+VSTV (K+)
+NIPPON PAINT Việt Nam
+PIAGGIO Việt Nam
+Jotun Việt Nam
+Highlands Coffee
+GlaxoSmithKline
+Tập đoàn Y khoa Hoàn Mỹ
+VPĐD Novartis Pharma Services AG tại TPHCM
+GreenFeed Việt Nam
+CGV Việt Nam
+Tập Đoàn Mặt Trời
+Siemens Việt Nam
+OPPO Việt Nam
+3M Việt Nam
+Qualcomm International
+Tập đoàn Đất Xanh
+Keppel Land Việt Nam
+AstraZeneca
+Công ty Cổ phần Đầu tư Xây dựng Ricons
+Công ty Cổ phần Sản xuất Nhựa Duy Tân
+De Heus
+Grab Việt Nam
+Shell
+Nielsen Việt Nam
+Tập đoàn C.P
+Total Marketing & Services Vietnam
+McDonald's Việt Nam
+OOCL (Vietnam) Co., Ltd.
+Eurowindow
