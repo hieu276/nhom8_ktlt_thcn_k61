@@ -13,21 +13,29 @@ import entity.*;
 public class RandomDataGenerator {
 	private final Connection connection = new Neo4jConnection().getConnection("jdbc:neo4j:bolt://localhost:11004",
 			"neo4j", "123456");
+	// link
 	private ArrayList<String> urls = new ArrayList<String>();
+	// location
 	private ArrayList<String> cities = new ArrayList<String>();
 	private ArrayList<String> locations = new ArrayList<String>();
+	private ArrayList<String> locationDescriptions = new ArrayList<String>();
+	// person
 	private ArrayList<String> fullNames = new ArrayList<String>();
 	private ArrayList<String> personDescriptions = new ArrayList<String>();
+	// organizations
 	private ArrayList<String> organizations = new ArrayList<String>();
 	private ArrayList<String> organizationDescriptions = new ArrayList<String>();
+	//countries
 	private ArrayList<String> countries = new ArrayList<String>();
 	private ArrayList<String> capitals = new ArrayList<String>();
 	private ArrayList<String> countryDescriptions = new ArrayList<String>();
-	private ArrayList<String> locationDescriptions = new ArrayList<String>();
+	// events
 	private ArrayList<String> events = new ArrayList<String>();
 	private ArrayList<String> eventDescriptions = new ArrayList<String>();
+	// agreements
 	private ArrayList<String> agreements = new ArrayList<String>();
 	private ArrayList<String> agreementDescriptions = new ArrayList<String>();
+	
 	private int personsNumber = 1;
 	private int organizationsNumber = 1;
 	private int locationsNumber = 1;
@@ -36,9 +44,10 @@ public class RandomDataGenerator {
 	private int timesNumber = 1;
 	private int agreementsNumber = 1;
 	private static Random random = new Random();
-
+        
+	// read file text lay data truoc khi random
 	public RandomDataGenerator() {
-		try {
+		try {   
 			BufferedReader urlFile = new BufferedReader(new FileReader("src/main/resources/data/url.txt"));
 			String url;
 			while ((url = urlFile.readLine()) != null) {
@@ -141,17 +150,17 @@ public class RandomDataGenerator {
 			System.exit(0);
 		}
 	}
-
+        //Ham random
 	private int generateRandomBetween(int start, int end) {
 		return start + (int) Math.round(Math.random() * (end - start));
 	}
-
+        //Random date-month-year
 	private String generateRandomDate(int startYear, int endYear) {
 		int month = generateRandomBetween(1, 12);
 		int year = generateRandomBetween(startYear, endYear);
 		return month + "/" + year;
 	}
-
+        //Ramdom tao Person
 	private void generatePerson(int id) {
 		try {
 			Person person = new Person();
@@ -172,8 +181,8 @@ public class RandomDataGenerator {
 			e.printStackTrace();
 		}
 	}
-
-	private void generateOrganization(int id) {
+        //Random tao Organization( co ID, Label, Describe, Headquarters- new, Website- new)
+	private void generateOrganization(int id) { 
 		try {
 			ArrayList<String> domains = new ArrayList<String>(
 					Arrays.asList(".com", ".com.vn", ".edu", ".co", ".ac", ".info", ".vn", ".edu.vn"));
@@ -196,7 +205,7 @@ public class RandomDataGenerator {
 			e.printStackTrace();
 		}
 	}
-
+        //Random tao Location( co ID, Label, Describe, City- new)
 	private void generateLocation(int id) {
 		try {
 			Location location = new Location();
@@ -215,7 +224,7 @@ public class RandomDataGenerator {
 			e.printStackTrace();
 		}
 	}
-
+        //Random tao Country( co ID, Label, Describe, Capital- new, Population- new)
 	private void generateCountry(int id) {
 		try {
 			Country country = new Country();
@@ -236,7 +245,7 @@ public class RandomDataGenerator {
 			e.printStackTrace();
 		}
 	}
-
+        // Random tao Event( co ID, Label, Describe, Venue- new)
 	private void generateEvent(int id) {
 		try {
 			Event event = new Event();
@@ -255,7 +264,7 @@ public class RandomDataGenerator {
 			e.printStackTrace();
 		}
 	}
-
+        // Random tao Time( co ID, Label, Describe, co the tao them 1 thuoc tinh new, VD: ngay nay la ngay gi)
 	private void generateTime(int id) {
 		try {
 			Time time = new Time();
@@ -272,7 +281,7 @@ public class RandomDataGenerator {
 			e.printStackTrace();
 		}
 	}
-
+        // Random tao Agreement( co ID, Label, Describe)
 	private void generateAgreement(int id) {
 		try {
 			Agreement agreement = new Agreement();
@@ -290,6 +299,8 @@ public class RandomDataGenerator {
 		}
 	}
 
+	
+	// Random tao quan he ( 31 case nhu trong bang)
 	private void generateRelations(int quantity) {
 		try {
 			for (int i = 0; i < quantity; i++) {
@@ -905,7 +916,7 @@ public class RandomDataGenerator {
 			e.printStackTrace();
 		}
 	}
-
+        // Tao ra mot thuc the( su dung cac random person, event, country, time, agreement, location o tren)
 	private void generateEntities(int quantity) {
 		for (int i = 0; i < quantity; i++) {
 			int ranInt = random.nextInt(7);
@@ -934,7 +945,7 @@ public class RandomDataGenerator {
 			}
 		}
 	}
-
+        // Xoa du lieu truoc moi phien khoi tao
 	private void deleteCurrentData() {
 		try {
 			String query = "MATCH (n) DETACH DELETE n";
@@ -944,7 +955,7 @@ public class RandomDataGenerator {
 			e.printStackTrace();
 		}
 	}
-
+        // Tao ra Database voi cac thuc the cung cac quan he ( su dung Random thuc the va Random quan he)
 	public void generate(int entitiesNumber, int relationsNumber) {
 		try {
 			this.deleteCurrentData();
